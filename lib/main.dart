@@ -31,6 +31,15 @@ class MyApp extends StatelessWidget {
           print('woi');
         },
       ),
-    ));
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: const Color.fromARGB(255, 230, 83, 15),
+        items:
+      const[
+        BottomNavigationBarItem(icon: Icon(Icons.school), label: 'School'),
+        BottomNavigationBarItem(icon: Icon(Icons.business), label: 'Business'),
+      ]
+      ),
+    )
+    );
   }
 }
